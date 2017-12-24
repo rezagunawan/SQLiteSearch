@@ -35,7 +35,7 @@ public class SearchActivity extends AppCompatActivity {
                 index = cursor.getColumnIndex(WordListOpenHelper.KEY_WORD);
                 result = cursor.getString(index);
                 mTextView.append(result + "\n");
-            } while (cursor.moveToNext()); // Returns true or false
+            } while (cursor.moveToNext());
             cursor.close();
         }
     }
